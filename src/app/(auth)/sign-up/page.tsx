@@ -23,6 +23,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
+import Navbar from "@/components/Navbar";
 const page = () => {
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
@@ -88,6 +89,8 @@ const page = () => {
     }
   };
   return (
+    <>
+    <Navbar/>
     <div data-theme = 'dark'   className="flex justify-center items-center min-h-screen ">
       <div data-theme = 'lemonade' className="w-full max-w-md p-8 space-y-8   rounded-lg shadow-md">
         <div className="text-center">
@@ -170,6 +173,7 @@ const page = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

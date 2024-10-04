@@ -58,6 +58,7 @@ const page = () => {
   };
   return (
     <>
+    <Navbar/>
     <div data-theme = 'dark' className="flex justify-center items-center min-h-screen">
       <div data-theme = 'lemonade' className="w-full max-w-md p-8 space-y-8 rounded-lg shadow-md">
         <div className="text-center">

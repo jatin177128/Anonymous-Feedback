@@ -21,7 +21,7 @@ import { ApiResponse } from "@/types/ApiResponse";
 
 type MessageCardProps = {
   message: Message;
-  onMessageDelete: (messageId: undefined) => void;
+  onMessageDelete: (messageId: string) => void;
 };
 
 export function MessageCard({ message, onMessageDelete }: MessageCardProps) {
@@ -35,7 +35,7 @@ export function MessageCard({ message, onMessageDelete }: MessageCardProps) {
       toast({
         title: response.data.message,
       });
-      onMessageDelete(message._id);
+      onMessageDelete(message._id||'');
     } catch (error) {
       const axiosError = error as AxiosError<ApiResponse>;
       toast({

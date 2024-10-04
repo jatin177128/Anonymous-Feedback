@@ -23,7 +23,7 @@ function UserDashboard() {
 
   const { toast } = useToast();
 
-  const handleDeleteMessage = (messageId: string) => {
+  const handleDeleteMessage = (messageId: undefined) => {
     setMessages(messages.filter((message) => message._id !== messageId));
   };
 

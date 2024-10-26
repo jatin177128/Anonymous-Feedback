@@ -46,7 +46,7 @@ const Home = () => {
                         <img className="ml-[1vw] pb-[1vw] h-[5vw] w-[8vw] overflow-hidden" src="https://cdn.prod.website-files.com/6082ee0e95eb6459d78fac06/6657aad705a9dfa3988a4270_6349c1990124c0b3efac2dcd_Types-of-hackers-header-image.png" alt="ochii" />
                       </motion.div>
                     )}
-                    <h1 className=" text-black uppercase text-[5vw] md:text-[3vw] lg:text-[6vw] leading-[5vw]  tracking-tighter font-mono font-semibold">
+                    <h1 className=" text-black uppercase text-[5vw] md:text-[3vw] lg:text-[6vw] leading-[5vw]  tracking-tighter font-mono font-semibold ">
                       {item}
                     </h1>
                 </div>
